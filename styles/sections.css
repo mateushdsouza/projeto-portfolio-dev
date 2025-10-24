@@ -1,0 +1,17 @@
+#intro {
+  background-image: url("../assets/Background_Intro.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+
+  .bio {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 180px 80px 180px;
+    align-items: center
+  }
+
+  .avatar {
+    position: relative;
+  }
+}
