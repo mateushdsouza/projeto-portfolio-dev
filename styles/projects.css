@@ -7,7 +7,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 72px 163px 163px 56px;
+    padding: 72px 0 56px 0;
     gap: 8px;
 
     p {
@@ -33,7 +33,7 @@ header {
     flex-direction: column;
     gap: 20px;
     padding: 12px 12px;
-    background-color: var(--base-gray-300);
+    background-color: #272727;
     border-radius: 12px;
 }
 
