@@ -2,7 +2,7 @@
     background-color: var(--base-gray-400);
 }
 
-header {
+#projects > header {
     display: flex;
     flex-direction: column;
     justify-content: center;
