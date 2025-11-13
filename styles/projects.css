@@ -25,13 +25,21 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    padding: 0 163px 163px 56px;
+    padding-bottom: 144px;
+    width: 1040px;
+    margin: 0 auto;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    width: 330px;
+    height: 280px;
+    gap: 24px;
     padding: 12px 12px;
     background-color: #272727;
     border-radius: 12px;
