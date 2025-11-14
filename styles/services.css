@@ -2,7 +2,7 @@
   background-color: #1f1f1f;
 }
 
-#services > header {
+#services>header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,8 +40,20 @@
   border: 1px solid #272727;
   border-radius: 12px;
 
-  img {
+  .devices-icon {
     color: var(--main-purple);
+    width: 48px;
+    height: 48px;
+  }
+
+  .harddrives-icon {
+    color: var(--main-yellow);
+    width: 48px;
+    height: 48px;
+  }
+
+  .infinity-icon {
+    color: var(--main-green);
     width: 48px;
     height: 48px;
   }
