@@ -1,0 +1,84 @@
+/* Seu CSS existente */
+footer {
+  background-image: url("../assets/Background_Contacts.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Alterado para 'cover' para melhor comportamento responsivo do background */
+  min-height: 100vh;
+}
+
+footer header {
+  padding: 128px 473px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+footer header p:nth-child(1) {
+  font: var(--subtitle);
+  color: var(--main-purple);
+}
+
+footer header h2 {
+  font: var(--title-md);
+  color: var(--base-gray-100);
+}
+
+footer header p:nth-child(3) {
+  font: var(--text-md);
+  color: var(--base-gray-200);
+}
+
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--base-gray-400);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  height: 68px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: var(--base-gray-300);
+  border-color: var(--main-purple);
+}
+
+.social-button .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-button .logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.social-button p {
+  font: var(--text-md);
+  color: var(--base-gray-200);
+}
+
+.social-button .arrowupright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-button .arrowupright img {
+  width: 24px;
+  height: 24px;
+}
