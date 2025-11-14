@@ -38,9 +38,6 @@
   align-items: center;
 }
 
-/* Nota: O seletor abaixo usa aninhamento (p{}) que é uma funcionalidade SASS/LESS
-   ou CSS Nesting (que precisa de compatibilidade do navegador).
-   Para CSS puro, devemos declarar os seletores completos, como abaixo. */
 .info p {
   font: var(--subtitle);
   color: var(--base-gray-200);
@@ -113,77 +110,4 @@ html {
 
 .scroll-image:hover {
   transform: scale(1.1);
-}
-
-/* CORREÇÃO: As regras #projects {...} foram removidas daqui
-   porque o CSS puro não permite aninhamento de seletores dessa forma.
-   Elas não devem ser alteradas ao passar o mouse sobre a seta.
-*/
-
-/* ------------------------------------------- */
-/* Correções na Media Query (Responsividade) */
-/* ------------------------------------------- */
-
-@media only screen and (max-width: 768px) {
-  /* CORREÇÃO: Alterado de .intro para #intro para corresponder ao ID no HTML */
-  #intro {
-    /* min-height: auto; não era o ideal, mantendo 100vh ou ajustando */
-    min-height: 100vh; /* Mantendo vh, mas garantindo que o conteúdo se ajuste */
-  }
-  
-  #intro .bio {
-    display: flex;
-    flex-direction: column;
-    padding: 10px; /* Redução do padding para telas menores */
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  #intro .arrow-down {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0px 50px;
-  }
-
-  #intro .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* CORREÇÃO: Ajuste de margem e remoção da declaração incorreta 'margin-top: 40px 0px 10px 0px;' */
-  #intro .info p {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 40px; /* Ajuste da margem superior */
-    margin-bottom: 10px; /* Adicionado margem inferior */
-    flex-wrap: wrap;
-  }
-
-  #intro .info p span {
-    display: inline-block;
-  }
-
-  #intro .info h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  #intro .info h3 {
-    font-size: 18px;
-    margin: 20px; /* Margem em todos os lados */
-  }
-
-  #intro .tags {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 40px; /* Reduzindo a margem no mobile */
-  }
-
-  #intro .tags span {
-    display: flex;
-    padding: 8px;
-  }
 }

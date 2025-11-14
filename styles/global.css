@@ -32,10 +32,3 @@
   --text-md: 16px/140% var(--font-family-MavenPro);
   --text-sm: 14px/140% var(--font-family-MavenPro);
 }
-
-@media only screen and (max-width: 768px) {
-  .container {
-    background-position: center;
-    background-color: var(--base-gray-200);
-  }
-}
